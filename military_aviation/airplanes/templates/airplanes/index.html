@@ -1,0 +1,16 @@
+{% extends 'airplanes/base.html' %}
+
+{% block content %}
+<h1>{{title}}</h1>
+<p>Содержание страницы</p>
+
+<ul>
+    {% for p in posts %}
+    <li>
+        <h2>{{p.title}}</h2>
+        <p>{{p.content}}</p>
+        <hr>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock content %}
